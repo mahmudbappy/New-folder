@@ -1,0 +1,645 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+
+/* Navbar section code */
+#navbar{
+      display: flex;
+      justify-content: space-between;
+      background: linear-gradient(dodgerblue, rgb(2, 65, 128)) ;
+      align-items: center;
+}
+.logo > h2{
+      margin-left: 40px;
+      font-size: 30px;
+      color: lightgreen;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: sans-serif;
+}
+
+.s-logo{
+      color: tomato;
+}
+
+#navbar > ul{
+      display: flex;
+      margin-right: 80px;
+}
+#navbar > ul > li{
+      list-style: none;
+      padding: 20px 0;
+      border-right: 1px solid #fff;
+      transition: 0.5s;
+}
+#navbar > ul > li:first-child{
+     border-left: 1px solid #fff;
+}
+#navbar > ul > li:hover{
+     background: #013c77;
+}
+#navbar > ul > li > a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+      margin: 0 20px;
+      font-family: sans-serif;
+}
+/* Navbar section code */
+
+/* Dropdown Navbar Section code */
+
+.dropdown {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      margin-top: 20px;
+      background: dodgerblue;
+      transform: scaleY(0);
+      transition: 0.5s;
+      transform-origin: top;
+}
+#navbar ul > li:hover .dropdown{
+      opacity: 1;
+      visibility: visible;
+      transform: scaleY(1);
+      transform-origin: top;
+}
+.dropdown > li{
+      list-style: none;
+      padding: 20px 0;
+      border-bottom: 1px solid #fff;
+      padding: 20px 67px;
+      transition: 0.5s;
+}
+
+.dropdown > li:first-child{
+      border-top: 1px solid #fff;
+}
+.dropdown > li:hover{
+      background: #013c77;
+}
+.dropdown > li > a{
+      text-decoration: none;
+      color: #fff;
+      font-family: sans-serif;
+}
+/* Dropdown Navbar Section code */
+
+
+/* Hero Area Code Start */
+
+#hero-section{
+      background-image: linear-gradient(#00000083, #000000d3), url(img/cycle.jpg);
+      height: 95.40vh;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+}
+
+.hero-container{
+      text-align: center;
+      padding: 80px 0;
+}
+
+.hero-text > h4{
+      color: #fff;
+      font-size: 32px;
+      padding: 30px 0;
+}
+.hero-text > h2{
+      color: #fff;
+      font-size: 50px;
+      background: #1e8fffa8;
+      width: 500px;
+      margin: auto;
+      padding: 15px 10px;
+      border-radius: 10px;
+}
+.hero-text > h5{
+      color: #fff;
+      font-size: 28px;
+      padding: 30px 0;
+}
+
+.hero-icon > i{ 
+      width: 30px;
+      height: 30px;
+      color: lightgreen;
+      font-size: 25px;
+      margin: 0 5px;
+      border: 2px solid lightgreen;
+      padding: 10px;
+      border-radius: 50%;
+      line-height: 1.2em;
+      transition: 0.5s;
+}
+.hero-icon > i:hover{ 
+      color: tomato;
+      border: 2px solid tomato;
+      transform: rotate(360deg);
+}
+.hero-icon > a{ 
+      text-decoration: none;
+      color: #fff;
+      margin-top: 20px;
+      display: inline-block;
+      font-size: 17px;
+      font-family: sans-serif;
+      background: #01478d9d;
+      padding: 10px 20px;
+      border-radius: 10px 0 10px 0;
+      border: 2px solid lightgreen;
+      transition: 0.5s;
+}
+
+.hero-icon > a:hover{ 
+     background: transparent;
+     border: 2px solid tomato;
+}
+
+
+/* Hero Area Code finish */
+
+/* First section code start */
+
+.first-box-parent{
+      width: 1000px;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      padding: 100px 0;
+}
+.box-1{
+      text-align: center;
+      padding: 10px 10px;
+      transition: 0.5s;
+}
+.box-1:hover{
+      box-shadow: 3px 3px 10px grey;
+}
+.box-1 > h3{
+      font-size: 20px;
+      padding: 10px 0;
+}
+.box-1 > i{
+      font-size: 44px;
+      padding: 10px 0;
+}
+
+/* First section code finish */
+
+/* Smart section code start */
+
+.smart-area{
+      text-align: center;
+      width: 250px;
+      margin: auto;
+      position: relative;
+}
+.smart-area > h2{
+      font-size: 40PX;
+}
+.smart-area > h2::after{
+      content: '';
+      background: #8a0707;
+      top: 55px;
+      left: 60px;
+      width: 140PX;
+      height: 5PX;
+      position: absolute;
+}
+.smart-img-area{
+      display: flex;
+      width: 1000px;
+      margin: auto;
+      padding: 50px 0;
+      align-items: center;
+}
+.smart-text {
+      margin-left: 20px;
+}
+.smart-text > h5{
+      font-size: 18px;
+      color: #8a0707;
+      padding: 10px 0;
+}
+.smart-text > h4{
+      font-size: 22px;
+      padding: 15px 0;
+}
+.smart-text > a{
+      text-decoration: none;
+      background: #8a0707;
+      color: #fff;
+      padding: 10px 25px;
+      margin-top: 20px;
+      display: inline-block;
+      border-radius: 6px;
+      transition: 0.5s;
+}
+.smart-text > a:hover{
+      background: #700202;
+}
+
+/* Smart section code finish */
+
+
+/* Primary section code start */
+
+.table-tittle > h2{
+      text-align: center;
+      font-size: 40px;
+      padding-top: 40px;
+}
+
+.third-section-tittle{
+      text-align: center;
+}
+.third-section-tittle > h5{
+      font-size: 16px;
+}
+.third-section-tittle > h2{
+      font-size: 30px;
+}
+.all-box{
+      width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 1em;
+      padding: 60px 0;
+}
+.box-one{
+      text-align: center;
+      background: lightblue;
+      padding: 20px 5px;
+      transition: 0.5s;
+}
+.box-one:hover{
+      background: #8cd5ee;
+}
+.box-one > h4{
+      font-size: 20px;
+      padding: 10px 0;
+}
+.box-one > i{
+      font-size: 35px;
+      padding: 5px 0;
+      color: #8a0707;
+}
+
+/* Primary section code finish */
+
+/* Pricing section code start */
+.all-table{
+      width: 950px;
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      padding: 50px 0;
+}
+.img-text-table{
+      width: 300px;
+      text-align: center;
+      box-shadow: 3px 3px 10px gray;
+}
+.img-text-table > img{
+      max-width: 100%;
+}
+.img-text-table > h2{
+      padding: 10px 0;
+}
+
+.span{
+      border-top: 2px dotted gray;
+      border-bottom: 2px dotted gray;
+      margin: 10px 10px;
+      padding: 10px 0;
+}
+.spanone{
+      font-size: 25px;
+}
+.spantwo{
+      font-size: 15px;
+      color: gray;
+}
+button{
+      background: #700202;
+      color: #fff;
+      padding: 8px 25px;
+      border: 2px solid #000;
+      border-radius: 6px;
+      font-size: 15px;
+}
+a{
+      text-decoration: none;
+      padding: 20px 0;
+      display: inline-block;
+}
+
+/* Pricing section code finish */
+
+/* Testomonial section code start */
+
+#section-five{
+      background: #FFE4C4;
+}
+
+.test-tittle{
+      text-align: center;
+      padding: 40px 0;
+}
+.test-tittle > h2{
+      font-size: 40px;
+}
+.test-tittle > h5{
+      font-size: 15px;
+      color: gray;
+      letter-spacing: 8px;
+      padding: 10px 0;
+}
+.test-all{
+      width: 1000px;
+      margin: auto;
+      display: grid;
+      grid-gap: 1.2em;
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 100px;
+}
+.test-box{
+      display: flex;
+      background: #fff;
+      padding: 15px 15px;
+}
+.test-img{
+      width: 200px;
+      padding-top: 10px;
+}
+.test-img > img{
+      max-width: 100%;
+      border-radius: 50%;
+      border: 1px solid red;
+}
+.test-text{
+      margin-left: 20px;
+}
+.test-text > p{
+      padding: 10px 0;
+}
+.test-text > i{
+      color: #ffa534;
+}
+.name1{
+      font-size: 25px;
+}
+/* Testomonial section code finish */
+
+/* Parallax section code start */
+
+#six-section{
+      background-image: url(img/parallax.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+}
+.parallax-box{
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      width: 1000px;
+      padding: 100px 0;
+      text-align: center;
+      margin-bottom: 50px;
+}
+.parallax-one > i{
+      font-size: 35px;
+      color: #fff;
+}
+.parallax-one > h2{
+      font-size: 35px;
+      color: #fff;
+      padding: 15px 0;
+}
+.parallax-one > h5{
+      font-size: 15px;
+      color: #fff;
+}
+
+/* Parallax section code finish */
+
+/* From section sode start */
+
+.from-box-tittle{
+      text-align: center;
+      padding: 50px 0;
+}
+.from-box-tittle > h2{
+      font-size: 40px;
+}
+.from-box-tittle > h5{
+      font-size: 16px;
+      color: gray;
+      letter-spacing: 0.4em;
+      padding: 20px 0;
+}
+.all-from-box{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      width: 950px;
+      margin: auto;
+}
+.from-single-box{
+      width: 300px;
+      height: 300px;
+      margin-bottom: 80px;
+      text-align: center;
+      position: relative;
+      
+}
+.from-single-box:hover .from-hover-box{
+      opacity: 1;
+}
+.from-hover-box{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #0000005b;
+      display: grid;
+      place-content: center;
+      color: #fff;
+      font-size: 22px;
+      opacity: 0;
+      transition: 0.5s;
+}
+.from-hover-box > i{
+     font-size: 30px;
+     padding-bottom: 20px;
+}
+.from-img > img{
+      max-width: 100%;
+      height: 300px;
+}
+.from-img{
+      overflow: hidden;
+}
+.from-single-box > h3{
+      font-size: 20px;
+      padding-top: 10px;
+}
+.from-single-box > h5{
+      font-size: 14px;
+      color: #8080807a;
+      padding: 15px 0;
+}
+.from-single-box:hover img{
+      transform: scale(1.5);
+      transition: 0.5s;
+}
+
+/* From section sode finish */
+
+/* Contact section code start */
+.contact-container{
+      width: 1000px;
+      margin: auto;
+      padding-bottom: 100px;
+}
+.form-parent{
+      background: #EAECF0;
+      display: flex;
+}
+.email-name-parent{
+      display: flex;
+}
+.form-tag{
+      width: 600px;
+}
+.email-name-parent  input{
+      width: 200px;
+      height: 40px;
+      margin: 0 20px;
+      border: none;
+      padding: 0 10px;
+}
+.email-name-parent  h4{
+      margin: 40px 20px 10px 20px;
+}
+.subjest-text{
+      margin: 20px 20px 10px 20px;
+}
+.subject{
+      width: 76%;
+      height: 40px;
+      margin: 0 20px;
+      border: none;
+      padding: 0 10px;
+}
+.textarea{
+      width: 80%;
+      height: 100px;
+      margin: 0 20px;
+      border: none;
+      padding: 5px 10px;
+}
+.message{
+      margin: 20px 20px 10px 20px;
+}
+.submit-button{
+      background: #3252AF;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      margin: 20px 0 0 20px;
+}
+.form-address{
+      display: flex;
+      padding-top: 50px;
+      justify-content: space-between;
+}
+.form-simgle-address{
+      text-align: center;
+}
+.form-simgle-address i{
+      background: #3252AF;
+      color: #fff;
+      padding: 20px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+}
+.form-simgle-address span{
+      font-weight: bold;
+}
+/* Contact section code finish */
+
+/* Footer section code start */
+
+footer{
+      background: #023364;
+      color: gray;
+}
+.footer-container{
+      width: 1000px;
+      margin: auto;
+}
+.footer-single-parent{
+      display: flex;
+      justify-content: space-between;
+      overflow: hidden;
+}
+.footer-single-box{
+      width: 220px;
+}
+.footer-single-box h3{
+      color: #fff;
+      margin: 50px 0 20px 0;
+}
+.p1{
+      margin-bottom: 20px;
+}
+.p-mobile{
+      margin: 10px 0;
+}
+.footer-single-box i{
+      color: #fff;
+}
+.footer-single-parent .footer-single-box:nth-child(2) p {
+      margin: 10px 0;
+}
+.footer-single-parent .footer-single-box:nth-child(3) p {
+      margin: 10px 0;
+}
+.footer-single-parent .footer-single-box:nth-child(4) p {
+      margin: 10px 0;
+}
+.footer-single-parent .footer-single-box:nth-child(4) a {
+      text-decoration: none;
+      color: brown;
+}
+.footer-menu ul{
+      display: flex;
+      justify-content: center;
+}
+.footer-menu ul li{
+      list-style: none;
+      margin: 20px;
+}
+.footer-menu ul li a{
+      color: gray;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+}
+.footer-menu p{
+      text-align: center;
+      padding-bottom: 20px;
+}
+.footer-menu span{
+      color: brown;
+}
+/* Footer section code finish */
